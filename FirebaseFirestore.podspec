@@ -26,6 +26,9 @@ Pod::Spec.new do |s|
 
   s.default_subspecs       = "AutodetectLeveldb"
 
+  s.dependency 'FirebaseCore', '~> 10.20'
+  s.dependency 'nanopb', '>= 2.30908.0', '< 2.30910.0'
+
   # Skip leveldb framework if Firebase Database is included in any form
   # Skip FirebaseFirestoreSwift if project is FlutterFire or React Native Firebase project. See:
   # https://github.com/invertase/firestore-ios-sdk-frameworks/issues/62
